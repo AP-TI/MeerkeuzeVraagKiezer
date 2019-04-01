@@ -10,7 +10,20 @@
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBox Name="textBoxAantalKeuzes" PlaceholderText="Geef aantal keuzes" Margin="10,10,10,10"></TextBox>
+            <TextBox Name="textBoxAantalKeuzes" PlaceholderText="Geef aantal keuzes" Margin="10,10,10,10" TextChanged="TextBoxAantalKeuzes_TextChanged"></TextBox>
+            <StackPanel Orientation="Horizontal" Name="stackPanelCheckBoxes">
+                <CheckBox Visibility="Collapsed" Name="checkBoxA" IsChecked="True">A</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxB" IsChecked="True">B</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxC" IsChecked="True">C</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxD" IsChecked="True">D</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxE" IsChecked="True">E</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxF" IsChecked="True">F</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxG" IsChecked="True">G</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxH" IsChecked="True">H</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxI" IsChecked="True">I</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxJ" IsChecked="True">J</CheckBox>
+                <CheckBox Visibility="Collapsed" Name="checkBoxK" IsChecked="True">K</CheckBox>
+            </StackPanel>
             <Button Height="50px" Width="200px" Name="buttonGooi" Click="ButtonGooi_Click" Margin="10,10,10,10">Gooi</Button>
             <TextBlock TextAlignment="Center" Name="textBlockResultaat" Margin="10,10,10,10"></TextBlock>
         </StackPanel>
